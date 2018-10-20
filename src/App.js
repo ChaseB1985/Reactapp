@@ -11,9 +11,9 @@ class App extends Component {
     friends
   };
 
-  state = {
-    count: 0
-  };
+  // state = {
+  //   count: 0
+  // };
 
   // handleIncrement increases this.state.count by 1
   handleIncrement = () => {
