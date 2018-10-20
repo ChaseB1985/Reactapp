@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "Liz Lemon",
+    "image": "https://i.imgur.com/TSJXyW2.png",
+    "realName": "Creator",
+    "quote": "I want to go to there."
+  },
+  {
+    "id": 2,
+    "name": "Jack Donaghy",
+    "image": "https://i.imgur.com/nnLCQQe.gif",
+    "realName": "Alac Baldwin",
+    "quote": "Good god, Lemon."
+  },
+  {
+    "id": 3,
+    "name": "Tracy Jordan",
+    "image": "https://i.imgur.com/z0aBEA9.jpg",
+    "realName": "Tracy Morgan",
+    "quote": "Your boos do not scare me because I know most of you are not ghosts."
+  },
+  {
+    "id": 4,
+    "name": "Kenneth Parcel",
+    "image": "https://i.imgur.com/dxO5Mar.jpg",
+    "realName": "Jack McBraier",
+    "quote": "Time to Die!"
+  },
+  {
+    "id": 5,
+    "name": "Frank",
+    "image": "https://vignette4.wikia.nocookie.net/vsbattles/images/3/39/Courage-0.png/revision/latest?cb=20160719055423",
+    "realName": "A Cowardly Dog",
+    "quote": "Nowhere, Kansas"
+  },
+  {
+    "id": 6,
+    "name": "Jenna Marooney",
+    "image": "https://i.imgur.com/lkD5nQC.gif",
+    "realName": "Student",
+    "quote": "Bluffington"
+  },
+  {
+    "id": 7,
+    "name": "Lutz",
+    "image": "https://i.imgur.com/HAAjrI5.png",
+    "realName": "Looney Toon",
+    "quote": "A Rabbit Burrow"
+  },
+  {
+    "id": 8,
+    "name": "Tufer",
+    "image": "http://vignette3.wikia.nocookie.net/p__/images/9/9a/Johnny_Bravo.png/revision/latest?cb=20131031233339&path-prefix=protagonist",
+    "realName": "Ladies Man",
+    "quote": "Aron City"
+  },
+  {
+    "id": 9,
+    "name": "Peter Hornburger",
+    "image": "https://i.imgur.com/JqX2Z10.png",
+    "realName": "Adventurer",
+    "quote": "I work to get away from my horrible family."
+  },
+  {
+    "id": 10,
+    "name": "Devon Banks",
+    "image": "https://i.imgur.com/tw9N5bs.png",
+    "realName": "Cashier",
+    "quote": "Im going to make your heart explode."
+  },
+  {
+    "id": 11,
+    "name": "Meat Cat",
+    "image": "https://i.imgur.com/YXNowEA.jpg",
+    "realName": "Meat Cat",
+    "quote": "Yay! Meat Cat"
+  },
+  {
+    "id": 12,
+    "name": "Dr Spaceman",
+    "image": "https://i.imgur.com/87kT2FE.gif",
+    "realName": "Leo Spucheman",
+    "quote": "You look like you could use some R & R. Rum and Ritalin"
+  }
+]
