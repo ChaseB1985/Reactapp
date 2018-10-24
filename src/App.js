@@ -5,6 +5,8 @@ import Title from "../src/components/Title";
 import Counter from "../src/components/Counter/Counter";
 import friends from "../src/friends.json";
 import "./App.css";
+import Nav from "./components/Nav/Nav";
+
 
 
 function shuffleFriends(array) {
@@ -18,45 +20,73 @@ class App extends Component {
   // Setting this.state.friends to the friends json array
   state = {
     friends,
-    count: 0
+    count: 0,
+    topScore:0,
+    rightWrong: "",
+    clicked:[],
   };
 
-
+handleClick = id => {
+  if (this.state.clicked.indexOf(id) === -1){
+    this.handleIncrement();
+    this.setState({ clicked: this.state.clicked(id) });
+  } else {
+    this.handleReset();
+  }
+};
   handleIncrement = () => {
     // We always use the setState method to update a component's state
-    this.setState({ count: this.state.count + 1 });
+    const newScore = this.state.count + 1;
+      this.setState({
+      count: newScore,
+      rightWrong: ""
+    });
+    if(newScore >= this.state.topScore) {
+      this.setState({topScore: newScore});
+    } else if (newScore === 12) {
+      this.setState({ rightWrong: "you win"});
+    }
+    this.handleShuffle();
+  
   };
-//select friend function
-//get the id of the friend then this.setstate friends.id=update to true
-handleShuffle = () => {
-  let shuffledFriends = shuffleFriends(friends);
-  this.setState({ friends: shuffledFriends });
-};
-
+//function to reset on click
+  handleReset = () => {
+    this.setState({
+      count:0,
+      clicked:[]
+    });
+    this.handleShuffle();
+  };
+    handleShuffle = () => {
+      let shuffledFriends = shuffleFriends(friends);
+      this.setState({ friends: shuffledFriends });
+    };
   // Map over this.state.friends and render a FriendCard component for each friend object
   render() {
     return (
       <div>
       <Counter 
       count={this.state.count}
-      handleIncrement={this.handleIncrement}
       />
       <Wrapper>
-        <Title>Friends List</Title>
-       
-        {this.state.friends.map(friend => (
-          <FriendCard
-            //removeFriend={this."selectfriend"}
-            count={this.state.count}
-            id={friend.id}
-            key={friend.id}
-            name={friend.name}
-            image={friend.image}
-            handleShuffle={this.handleShuffle}
+      <Title>Friends List</Title>
+      <Nav
+      count={this.state.count}/>
+      {this.state.friends.map(friend => (
+        <FriendCard
+        handleIncrement={this.handleIncrement}
+        id={friend.id}
+        key={friend.id}
+        name={friend.name}
+        image={friend.image}
+        handleShuffle={this.handleShuffle}
+        updateFriend={this.updateFriend}
+        handleReset={this.handleReset}
+        handleClick={this.handleClick}
           />
         ))}
       </Wrapper>
-      </div>
+      </div> 
     );
   }
 }

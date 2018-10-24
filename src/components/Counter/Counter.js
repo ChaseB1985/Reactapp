@@ -8,7 +8,7 @@ import CardBody from "./CardBody";
 
       <div className="card text-center">
         <div className="card-header bg-primary text-white">
-          Click Counter!
+          Current Score:
         </div>
         <div>
           <h1>count={props.count}</h1>

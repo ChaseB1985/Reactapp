@@ -2,7 +2,10 @@ import React from "react";
 import "./FriendCard.css";
 
 const FriendCard = props => (
-  <div className="card">
+  <div className="card"
+    value={props.id}
+   // onClick={()=> props.handleIncrement(props.id)}
+  >
     <div className="img-container">
       <img alt={props.name} src={props.image} />
     </div>
@@ -11,17 +14,9 @@ const FriendCard = props => (
         <li>
           <strong>Name:</strong> {props.name}
         </li>
-        <li>
-          <strong>Real Name:</strong> {props.realName}
-        </li>
-        <li>
-          <strong>Quote:</strong> {props.quote}
-        </li>
-      </ul>
+       </ul>
     </div>
-    <span onClick={() => props.removeFriend(props.id)} className="remove">
-      𝘅
-    </span>
+    <button onClick={props.handleIncrement}>Increment</button>
   </div>
 );
 
