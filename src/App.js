@@ -69,9 +69,10 @@ handleClick = id => {
       count={this.state.count}
       />
       <Wrapper>
-      <Title>Friends List</Title>
+      <Title>30 Rock Clicky Game</Title>
       <Nav
       count={this.state.count}/>
+      
       {this.state.friends.map(friend => (
         <FriendCard
         handleIncrement={this.handleIncrement}

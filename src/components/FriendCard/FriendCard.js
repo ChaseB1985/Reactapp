@@ -4,7 +4,6 @@ import "./FriendCard.css";
 const FriendCard = props => (
   <div className="card"
     value={props.id}
-   // onClick={()=> props.handleIncrement(props.id)}
   >
     <div className="img-container">
       <img alt={props.name} src={props.image} />
@@ -16,7 +15,7 @@ const FriendCard = props => (
         </li>
        </ul>
     </div>
-    <button onClick={props.handleIncrement}>Increment</button>
+    <button onClick={props.handleIncrement}>Choose Friend</button>
   </div>
 );
 
