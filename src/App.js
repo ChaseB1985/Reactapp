@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import FriendCard from "../src/components/FriendCard";
 import Wrapper from "../src/components/Wrapper";
 import Title from "../src/components/Title";
-import Counter from "../src/components/Counter/Counter";
 import friends from "../src/friends.json";
 import "./App.css";
 import Nav from "./components/Nav/Nav";
@@ -27,7 +26,7 @@ class App extends Component {
   };
 
 handleClick = id => {
-  if (this.state.clicked.indexOf(id) === -1){
+  if (this.state.clicked.indexOf(id) === 1){
     this.handleIncrement();
     this.setState({ clicked: this.state.clicked(id) });
   } else {
@@ -61,13 +60,11 @@ handleClick = id => {
       let shuffledFriends = shuffleFriends(friends);
       this.setState({ friends: shuffledFriends });
     };
-  // Map over this.state.friends and render a FriendCard component for each friend object
+ 
   render() {
     return (
       <div>
-      <Counter 
-      count={this.state.count}
-      />
+      
       <Wrapper>
       <Title>30 Rock Clicky Game</Title>
       <Nav
@@ -75,11 +72,11 @@ handleClick = id => {
       
       {this.state.friends.map(friend => (
         <FriendCard
-        handleIncrement={this.handleIncrement}
         id={friend.id}
         key={friend.id}
         name={friend.name}
         image={friend.image}
+        handleIncrement={this.handleIncrement}
         handleShuffle={this.handleShuffle}
         updateFriend={this.updateFriend}
         handleReset={this.handleReset}

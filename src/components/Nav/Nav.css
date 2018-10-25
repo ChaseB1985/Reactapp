@@ -1,27 +1,18 @@
 nav {
     width: 100%;
     font-size: 3rem;
-    color: #fff;
-    margin-bottom: 50px;
-    background-color: rgb(56, 56, 56);
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    background-color: rgb(145, 209, 26);
     height: auto;
-    font-family: 'Bungee', cursive;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
-  a {
-    color: #fed420;
-  }
-  
-  a:hover {
-    color: #fed420;
-    text-decoration: none;
-  }
   
   nav li {
     display: inline-block;
-    padding: 26px 0;
-    width: 25%;
-    /* text-align: center; */
+    width: 50%;
+    text-align: center; 
   }
   
   ul {
@@ -30,8 +21,10 @@ nav {
     align-items: center;
   }
   
+
+
   @media only screen and (max-width: 750px) {
-    #cur-sco, #top-sco {
+    #cursco {
       font-size: 2rem;
     }
   }
