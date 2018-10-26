@@ -15,7 +15,7 @@ const FriendCard = props => (
         </li>
        </ul>
     </div>
-    <button onClick={props.handleIncrement}>Choose Friend</button>
+    <button onClick={() => props.handleClick(props.id)}>Choose Friend</button>
   </div>
 );
 

@@ -6,6 +6,7 @@ const Nav = props => (
     <ul>
      
       <li id="cursco">Current Score: {props.count}</li>
+      <li id="topsco">Top Score: {props.topScore}</li>
       
       
     </ul>
